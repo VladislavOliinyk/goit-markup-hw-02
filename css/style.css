@@ -1,59 +1,145 @@
 :root {
-        /* Колір для абзаців, лого, адреси */
-    --primary-text-color: rgba(67, 68, 85, 1);
-        /* Колір для навігації та заголовків h2*/
-    --title-text-color: rgba(46, 47, 66, 1);
-        /* акцент лого і кнопка, фон героя */
-    --accent-color: rgba(77, 90, 229, 1);
+  /* Колір для абзаців, лого, адреси */
+  --primary-text-color: rgba(67, 68, 85, 1);
+  /* Колір для навігації та заголовків h2*/
+  --title-text-color: rgba(46, 47, 66, 1);
+  /* акцент лого і кнопка, фон героя */
+  --accent-color: rgba(77, 90, 229, 1);
 }
 
-/* Задаємо фон та основний колір тексту */
+/* Властивості фону та основного тексту */
 .page-body {
-    background-color: #E5E5E5 ;
-    color: var(--primary-text-color);
+  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+  font-family: "Roboto", "Sans-serif";
+  letter-spacing: 0.02em;
 }
+
 /* Знімаємо стилізацію спсику через додатковий клас list */
 .list {
-    list-style: none;
+  list-style: none;
 }
 
-/* Задаємо колір для посилання ЛОГО, заголовків секцій, навігації */
-.navigation .logo-link, .navigation a, .title {
+/* Властивості навігації та заголовків секцій */
+.navigation,
+.navigation a {
+  color: var(--title-text-color);
+}
+
+/* Властивості заголовків секцій */
+.title {
     color: var(--title-text-color);
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+}
+/* Властивості навігації */
+.navigation.list .list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Властивості Лого */
+.logo-link {
+  color: var(--title-text-color);
+  font-family: "Raleway", "Sans-serif";
+  letter-spacing: 0.03em;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
 }
 
 /* Задаємо колір для контактів */
 .contact a {
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* Спроба покрасити перші три букви лого в інший колір */
 .initial {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Колір заголовку героя */
 .hero-title {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
 }
 
 /* Задаємо колір та фон для кнопки головноно героя*/
 .button {
-    color:#E5E5E5;
-    background-color: var(--accent-color);
+  color: #e5e5e5;
+  background-color: var(--accent-color);
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+cursor: pointer;
 }
 
 /* Фон для секції головного героя */
 .hero {
-    background-color: rgba(46, 47, 66, 1);
+  background-color: rgba(46, 47, 66, 1);
 }
 
- /* Задаємо  колір тексту для футера */
+/* Задаємо  колір тексту для футера */
 .footer-text {
-    color: rgba(231, 233, 252, 1);
+  color: rgba(231, 233, 252, 1);
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
 }
 
- /* Задаємо фоновий колір для команди */
+/* Задаємо фоновий колір для команди */
 .team-cards .team-card {
-background-color: rgba(244, 244, 253, 1);
+  background-color: rgba(244, 244, 253, 1);
+}
+
+/* Властивості абзаців секцій */
+.section-text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+}
+
+/*/* Властивості заголовку секції What are we doing*/
+.title-section {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-transform: capitalize;
+} 
+
+.team-title {
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+}
+
+/* Властивості для сторінки Portfolio */
+
+/* Властивості для фільтра */
+.filter-button {
+  cursor: pointer;
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+}
+
+.portfolio-text {
+  color: var(--primary-text-color);
+  line-height: 1.2;
 }
