@@ -5,11 +5,14 @@
   --title-text-color: rgba(46, 47, 66, 1);
   /* акцент лого і кнопка, фон героя */
   --accent-color: rgba(77, 90, 229, 1);
+  /* Головний фон сайту */
+  --background-color: rgba(255, 255, 255, 1);
+
 }
 
 /* Властивості фону та основного тексту */
 body {
-  background-color: #e5e5e5;
+  background-color: var(--background-color);
   color: var(--primary-text-color);
   font-family: "Roboto", "Sans-serif";
   letter-spacing: 0.02em;
