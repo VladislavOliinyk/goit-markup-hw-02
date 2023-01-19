@@ -98,6 +98,7 @@ body {
 .button {
   color: #e5e5e5;
   background-color: var(--accent-color);
+  font-family: "Roboto", "Sans-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
