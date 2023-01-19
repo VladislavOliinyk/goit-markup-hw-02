@@ -7,6 +7,9 @@
   --accent-color: rgba(77, 90, 229, 1);
   /* Головний фон сайту */
   --background-color: rgba(255, 255, 255, 1);
+  /* Фон секції команди */
+  --background-color-teamcard: rgba(244, 244, 253, 1);
+
 
 }
 
@@ -148,8 +151,12 @@ body {
 }
 
 /* Задаємо фоновий колір для команди */
-.team-cards .team-card {
+.team-card {
   background-color: var(--background-color);
+}
+
+.team {
+  background-color: var(--background-color-teamcard);
 }
 
 /* Властивості абзаців секцій */
