@@ -64,6 +64,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
+  text-transform: uppercase;
 }
 
 /* Задаємо колір для контактів */
@@ -134,6 +135,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
+  text-transform: uppercase;
 }
 
 /* Задаємо фоновий колір для команди */
