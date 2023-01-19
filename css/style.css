@@ -91,6 +91,7 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  text-transform: capitalize;
 }
 
 /* Задаємо колір та фон для кнопки головноно героя*/
