@@ -20,10 +20,23 @@
   list-style: none;
 }
 
+/* Ховаєммо заголовок секції "наші переваги" */
+.advantages-title {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+
 /* Властивості навігації та заголовків секцій */
 .navigation,
 .navigation a {
   color: var(--title-text-color);
+}
+
+/* Властивості ховера посилань навігації */
+.navigation a:hover,
+.navigation a:active .navigation a:focus {
+  color: rgba(64, 75, 191, 1);
 }
 
 /* Властивості заголовків секцій */
@@ -58,7 +71,9 @@
   line-height: 1.5;
 }
 
-.contact a:focus, .contact a:hover, .contact a:active {
+.contact a:focus,
+.contact a:hover,
+.contact a:active {
   color: rgba(64, 75, 191, 1);
 }
 
@@ -105,6 +120,19 @@
   line-height: 1.5;
 }
 
+.footer {
+  background-color: var(--title-text-color);
+}
+
+.logo-link-footer {
+  color: rgba(244, 244, 253, 1);
+  font-family: "Raleway", "Sans-serif";
+  letter-spacing: 0.03em;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
 /* Задаємо фоновий колір для команди */
 .team-cards .team-card {
   background-color: rgba(244, 244, 253, 1);
@@ -125,17 +153,36 @@
   text-transform: capitalize;
 }
 
+/* Властивосты заголовків секцій */
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
 }
 
+/* Прибиражмо підкреслення у посилань */
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
 /* Властивості для сторінки Portfolio */
 
 /* Властивості для фільтра */
 .filter-button {
+  width: 116px;
+  height: 48px;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
   cursor: pointer;
+}
+
+/* Ефект ховера для секції фільтру */
+.filter-button:hover {
+  color: #e5e5e5;
+  background-color: rgba(64, 75, 191, 1);
 }
 
 /* ПРибираэмо підкреслення лінків */
@@ -155,4 +202,11 @@
 .portfolio-text {
   color: var(--primary-text-color);
   line-height: 1.2;
+}
+
+/* Ховаємо заголовки сторінки портфоліо */
+.filter-title {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
 }
