@@ -149,7 +149,7 @@ body {
 
 /* Задаємо фоновий колір для команди */
 .team-cards .team-card {
-  background-color: rgba(244, 244, 253, 1);
+  background-color: var(--background-color);
 }
 
 /* Властивості абзаців секцій */
