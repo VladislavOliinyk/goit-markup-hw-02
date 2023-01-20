@@ -9,8 +9,24 @@
   --background-color: rgba(255, 255, 255, 1);
   /* Фон секції команди */
   --background-color-teamcard: rgba(244, 244, 253, 1);
-
-
+  /* Колір Ховера для навігації */
+  --navigation-hover-color: rgba(64, 75, 191, 1);
+  /* Колір заголовку героя */
+  --color-title-hero: rgba(255, 255, 255, 1);
+  /* Колір тексту футера */
+  --color-footer-text: rgba(231, 233, 252, 1);
+  /* Колір фону головного героя */
+  --hero-background-color: rgba(46, 47, 66, 1);
+  /* Колір лого в футері */
+  --logo-footer-color: rgba(244, 244, 253, 1);
+  /* Фон для кнопок фільтра */
+  --bgbutton-portfolio: rgba(231, 233, 252, 1);
+  /* Колір обводки кнопок фільтра */
+  --border-button-color: #e7e9fc;
+  /* Колір тексту кнопки при ховері */
+  --color-button-portfolio: rgba(255, 255, 255, 1);
+  /* Властивість наведення курсора на посилання  */
+  --cursor-pointer: pointer;
 }
 
 /* Властивості фону та основного тексту */
@@ -34,7 +50,7 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -50,7 +66,7 @@ body {
 /* Властивості ховера посилань навігації */
 .navigation a:hover,
 .navigation a:active .navigation a:focus {
-  color: rgba(64, 75, 191, 1);
+  color: var(--navigation-hover-color);
 }
 
 /* Властивості заголовків секцій */
@@ -88,7 +104,7 @@ body {
 .contact a:focus,
 .contact a:hover,
 .contact a:active {
-  color: rgba(64, 75, 191, 1);
+  color: var(--navigation-hover-color);
 }
 
 /* Спроба покрасити перші три букви лого в інший колір */
@@ -98,7 +114,7 @@ body {
 
 /* Колір заголовку героя */
 .hero-title {
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-title-hero);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -107,30 +123,30 @@ body {
 
 /* Задаємо колір та фон для кнопки головноно героя*/
 .button {
-  color: #e5e5e5;
+  color: var(--color-title-hero);
   background-color: var(--accent-color);
   font-family: "Roboto", "Sans-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 /* Властивості наведення на кнопку героя */
 .button:hover,
 .button:active {
-  background-color: rgba(64, 75, 191, 1);
+  background-color: var(--navigation-hover-color);
 }
 
 /* Фон для секції головного героя */
 .hero {
-  background-color: rgba(46, 47, 66, 1);
+  background-color: var(--hero-background-color);
 }
 
 /* Задаємо  колір тексту для футера */
 .footer-text {
-  color: rgba(231, 233, 252, 1);
+  color: var(--color-footer-text);
   font-size: 16px;
   line-height: 1.5;
 }
@@ -140,7 +156,7 @@ body {
 }
 
 .logo-link-footer {
-  color: rgba(244, 244, 253, 1);
+  color: var(--logo-footer-color);
   font-family: "Raleway", "Sans-serif";
   letter-spacing: 0.03em;
   font-weight: 800;
@@ -190,16 +206,21 @@ a {
 
 /* Властивості для фільтра */
 .filter-button {
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
+  color: var(--accent-color);
+  background: var(--bgbutton-portfolio);
+  border: 1px solid var(--border-button-color);
   border-radius: 4px;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
+  font-family: "Roboto", "Sans-serif";
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
 }
 
 /* Ефект ховера для секції фільтру */
 .filter-button:hover {
-  color: #e5e5e5;
-  background-color: rgba(64, 75, 191, 1);
+  color: var(--color-button-portfolio);
+  background-color: var(--navigation-hover-color);
 }
 
 /* ПРибираэмо підкреслення лінків */
@@ -229,7 +250,7 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
